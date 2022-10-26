@@ -1,0 +1,20 @@
+{
+
+    "manifest_version": 2,
+    "name": "AWS SSO login button clicker",
+    "version": "0.1",
+  
+    "description": "When logging in via AWS SSO, automatically click the 'Allow' button",
+  
+    "icons": {
+      "48": "icons/border-48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.awsapps.com/*"],
+        "js": ["allow-button-click.js"]
+      }
+    ]
+  
+  }
