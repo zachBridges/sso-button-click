@@ -1,5 +1,5 @@
 function clickAllowButton() {
-    // TODO wait for something
+    // TODO wait for the page to have been loaded instead of firing off
     document.getElementById("cli_login_button").click()
 }
 
@@ -16,6 +16,10 @@ console.log("(｡◕‿◕｡)ﾉ ohai");
 window.addEventListener('pageshow', (event) => {
     isLoginSucessful(); // validation 
 })
+
+
+// TODO select profile
 clickAllowButton();
+
 
 
